@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --color-terminal: rgb(42, 42, 42);
+    --borde-redondo: 5px;
+
+}
+
+*{
+    font-family: "Source Code Pro", monospace;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7500ab;
+    color: white;
+}
+input, button{
+    border: none;
+    outline: none;
+}
+main{
+    padding: 25px;
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 55%);
+    border-radius: var(--borde-redondo);
+}
+h1{
+    margin: 0;
+}
+#input-first, #result{
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+#input-first{
+    margin: 10px 0 0;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+#result{
+    height: 20px;
+    color: rgb(8, 255, 8);
+    padding: 0 10px 10px;
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+}
+.range{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    text-align: center;
+    align-items: center;
+}
+input[type='range']{
+    -webkit-appearance: none;
+    border-radius: var(--borde-redondo);
+    background: var(--color-terminal);
+    margin-top: 0s;
+    padding: 0 5px;
+    height: 20px;
+}
+input[type='range']::-webkit-slider-thumb{
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+input[type=button] {
+    
+    
+    border-radius: var(--borde-redondo);
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    margin: 4px 5px;
+    cursor: pointer;
+}
+.button-blue{
+    background-color: #0000a8;
+}
+.button-green{
+    background-color: #009717;
+}
+.button-violet{
+    background-color: #7500ab;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="text/javascript" defer></script>
+    <script src="style.js" type="text/javascript" defer></script>
+    <title>CIFRADOR CESAR</title>
+</head>
+<body>
+    
+    <main>
+        <h1>CIFRADOR CESAR</h1>
+        <div>
+            <input type="button" class="button-blue" onclick="btnChangerBlue()" value="Azul">
+            <input type="button" class="button-green" onclick="btnChangerGreen()" value="Verde">
+            <input type="button" class="button-violet" onclick="btnChangerViolet()" value="Violeta" >
+            </div>
+        
+        <form id="cipher" autocomplete="off">
+            <input id="input-first" spellcheck="false" placeholder="Ingrese el texto" type="text" name="text">
+        </form>
+        <div id="result"></div>
+        <div class="range">
+            <input type="range" id="range" value="1" min="1" max="25" oninput="this.nextElementSibling.value = this.value">
+            <output>1</output>
+        </div>
+
+    </main>
+</body>
+</html>
